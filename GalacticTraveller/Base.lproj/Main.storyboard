@@ -8,6 +8,22 @@
     </dependencies>
     <scenes>
         <!--View Controller-->
+        <scene sceneID="ve1-sY-Bzm">
+            <objects>
+                <viewController id="LOB-Nc-Bub" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="3Bc-ui-x07">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="JIa-jA-70E"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="ui2-bK-TeG"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="lVx-tY-ct3" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1787" y="127"/>
+        </scene>
+        <!--Intergalatic Traveller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="GalacticTraveller" customModuleProvider="target" sceneMemberID="viewController">
@@ -19,11 +35,27 @@
                                 <rect key="frame" x="0.0" y="88" width="414" height="808"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" heightSizable="YES"/>
                             </imageView>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Red or Blue?" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="F27-ly-hkD">
+                                <rect key="frame" x="145" y="346" width="124" height="34"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="19"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="G8N-F7-O1S">
+                                <rect key="frame" x="74" y="435" width="289" height="52"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="33"/>
+                                <state key="normal" title="Enter The Wormhole"/>
+                                <connections>
+                                    <segue destination="LOB-Nc-Bub" kind="show" id="EyK-om-2eK"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
-                    <navigationItem key="navigationItem" id="y4v-Zp-ioq"/>
+                    <navigationItem key="navigationItem" title="Intergalatic Traveller" id="y4v-Zp-ioq"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
